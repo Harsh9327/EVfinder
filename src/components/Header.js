@@ -1,6 +1,8 @@
 // import { Link } from "react-router-dom";
 import { useState } from "react";
 import user from "../assets/user2.jpg"
+import logo from "../assets/logo192.png";
+import name from "../assets/NewProject.png";
 
 export const Header = () => {
 const [hidden, setHidden] = useState(true);
@@ -9,8 +11,8 @@ const [hidden, setHidden] = useState(true);
   <header className="bg-gray-800 text-white p-2 flex justify-between items-center ">
   {/* Logo and Site Name */}
   <div className="flex items-center">
-    <img src="https://flowbite.com/docs/images/logo.svg" alt="Logo" className="w-8 h-8 mr-2" />
-    <span className="font-bold text-lg">EV-Station Finder</span>
+    <img src={logo} alt="Logo" className="w-11 h-11 mr-2" />
+    <img src={name} alt="logoname" className=" h-6"/>
   </div>
 
   {/* Navigation Links */}

@@ -12,7 +12,7 @@ export const MyLocation = ({position, setPosition}) => {
       setCity(result.results[0].components.city || result.results[0].components.state_district + " " + (result.results[0].components.suburb || " ") ) ;
     }
     else{
-      alert("on location");
+      alert( " Turn On Your Location For Current Location");
     }
   }
 
