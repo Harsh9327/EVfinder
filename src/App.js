@@ -7,8 +7,8 @@ import { Footer } from './components/Footer';
 
 function App() {
   const [locoid, setLocoid] = useState("");
-  const [position, setPosition] = useState({ latitude: null, longitude: null, city:"" });
-  
+  const [position, setPosition] = useState({ latitude: null, longitude: null, city:"", lodded:false });
+  // alert("Turn on your location for better exprience");
   return (
     <div className="App ">
       <div className='sticky top-0'>
