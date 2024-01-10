@@ -12,14 +12,14 @@ export default function ComboBox({setLocoid, position, setPosition}) {
      
   return (
     <>
-    <div className="flex justify-evenly items-center py-2 bg-gray-300">
+    <div className="flex flex-wrap justify-evenly items-center  py-2 bg-gray-300">
     <Autocomplete
     className=''  
       disablePortal
       id="combo-box-demo"
       options={location}
       // defaultValue={'Rajkot'}
-      sx={{ width: 300 }}
+      sx={{ width: 200 }}
       renderInput={(params) => <TextField {...params} label="Search your city.." />}
       getOptionLabel={(option) => (option ? option.city : "")}
       onChange={(e,v) => {

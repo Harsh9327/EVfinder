@@ -1,7 +1,7 @@
 import evjson from '../data/ev-charging-stations-india.json';
 import  location  from '../data/Location.json';
 export const Card = ({station,position}) => {
-    console.log(position);
+    
   return (
    <>      
     <div className="max-w-xs max-h-max m-3 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
