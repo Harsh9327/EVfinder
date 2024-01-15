@@ -48,7 +48,7 @@ export const Footer = () => {
                           <a href="https://github.com/Harsh9327" target="_blank" className="hover:underline ">Github</a>
                       </li>
                       <li>
-                          <a href="" target="_blank" className="hover:underline">Instagram</a>
+                          <a href="https://www.instagram.com/harshmungra255/" target="_blank" className="hover:underline">Instagram</a>
                       </li>
                   </ul>
               </div>   

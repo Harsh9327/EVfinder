@@ -3,13 +3,9 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { MyLocation } from './MyLocation';
 import  location from '../data/Location.json';
-
-export default function ComboBox({setLocoid, position, setPosition}) {
-    
-   
-    //   console.log(locoid);
-
-     
+ 
+export default function ComboBox({setLocoid, position, setPosition, setProgress, progress}) {
+         
   return (
     <>
     <div className="flex flex-wrap justify-evenly items-center  py-2 bg-gray-300">
@@ -18,7 +14,6 @@ export default function ComboBox({setLocoid, position, setPosition}) {
       disablePortal
       id="combo-box-demo"
       options={location}
-      // defaultValue={'Rajkot'}
       sx={{ width: 200 }}
       renderInput={(params) => <TextField {...params} label="Search your city.." />}
       getOptionLabel={(option) => (option ? option.city : "")}
@@ -29,7 +24,7 @@ export default function ComboBox({setLocoid, position, setPosition}) {
         setLocoid("")
       }}
      />   
-    <MyLocation  position={position} setPosition={setPosition}/>
+    <MyLocation  position={position} setPosition={setPosition} progress={progress} setProgress={setProgress}/>
     </div>
     
     </>
